@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "test": "tap test/*.js",
+    "watch": "npx tailwindcss -i ./src/assets/app.css -o ./public/css/app.css --watch",
+    "web": "npx http-server public --port=3000"
+  },
+  "dependencies": {
+  }
+}

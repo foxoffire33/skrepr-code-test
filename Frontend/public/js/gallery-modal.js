@@ -11,7 +11,7 @@ templateModal.innerHTML = `
           <div class="sm:flex sm:items-start">
             <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
               <h3 class="text-lg font-medium leading-6 text-gray-900" id="modal-title"></h3>
-              <div class="flex p-2">
+              <div class="flex p-2 flex-auto overflow-y-auto relative ">
               <div class="rounded-md p-4 max-w-sm w-full mx-auto" id="modal-loading">
               <div class="animate-pulse flex space-x-4" >
                 <div class="rounded bg-slate-200 h-48 w-48"></div>
