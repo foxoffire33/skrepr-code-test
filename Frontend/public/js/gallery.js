@@ -33,8 +33,6 @@ class gallery extends HTMLElement {
     }
 
     disconnectedCallback() {
-        document.querySelector('#searchInput').removeEventListener('input', async (event) => {
-        })
     }
 
     async searchImages() {

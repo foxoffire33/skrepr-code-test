@@ -33,7 +33,8 @@ class appNavigation extends HTMLElement {
     async connectedCallback() {
         gallery = document.querySelector('app-gallery');
         this.shadowRoot.querySelector('#searchInput').addEventListener('input', async (event) => {
-            await gallery.search(event.target.value.trim());
+            const value = event.target.value.trim();
+            await gallery.search((value.length > 1 ? value : 'nature'));
         });
     }
 
